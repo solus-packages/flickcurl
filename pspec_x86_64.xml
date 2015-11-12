@@ -1,0 +1,65 @@
+<PISI>
+    <Source>
+        <Name>flickcurl</Name>
+        <Packager>
+            <Name>Justin Zobel</Name>
+            <Email>justin@solus-project.com</Email>
+        </Packager>
+        <License>GPL-2.0+</License>
+        <License>LGPL-2.1+</License>
+        <License>Apache-2.0+</License>
+        <Summary xml:lang="en">Flickcurl - Flickr API</Summary>
+        <Description xml:lang="en">Flickcurl is a C library for the Flickr API, handling creating the requests, signing, token management, calling the API, marshalling request parameters and decoding responses. It uses libcurl to call the REST web service and libxml2 to manipulate the XML responses. Flickcurl supports all of the API (see Flickcurl API coverage for details) including the functions for photo/video uploading, browsing, searching, adding and editing comments, groups, notes, photosets, categories, activity, blogs, favorites, places, tags, machine tags, institutions, pandas and photo/video metadata. It also includes a program flickrdf to turn photo metadata, tags, machine tags and places into an RDF triples description.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>flickcurl-devel</Name>
+        <Summary xml:lang="en">Development files for flickcurl</Summary>
+        <Description xml:lang="en">Flickcurl is a C library for the Flickr API, handling creating the requests, signing, token management, calling the API, marshalling request parameters and decoding responses. It uses libcurl to call the REST web service and libxml2 to manipulate the XML responses. Flickcurl supports all of the API (see Flickcurl API coverage for details) including the functions for photo/video uploading, browsing, searching, adding and editing comments, groups, notes, photosets, categories, activity, blogs, favorites, places, tags, machine tags, institutions, pandas and photo/video metadata. It also includes a program flickrdf to turn photo metadata, tags, machine tags and places into an RDF triples description.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="current">flickcurl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig</Path>
+            <Path fileType="header">/usr/include</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>flickcurl-docs</Name>
+        <Summary xml:lang="en">Documentation for flickcurl</Summary>
+        <Description xml:lang="en">Flickcurl is a C library for the Flickr API, handling creating the requests, signing, token management, calling the API, marshalling request parameters and decoding responses. It uses libcurl to call the REST web service and libxml2 to manipulate the XML responses. Flickcurl supports all of the API (see Flickcurl API coverage for details) including the functions for photo/video uploading, browsing, searching, adding and editing comments, groups, notes, photosets, categories, activity, blogs, favorites, places, tags, machine tags, institutions, pandas and photo/video metadata. It also includes a program flickrdf to turn photo metadata, tags, machine tags and places into an RDF triples description.
+</Description>
+        <PartOf>programming.docs</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="current">flickcurl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="doc">/usr/share/gtk-doc</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>flickcurl</Name>
+        <Summary xml:lang="en">Flickcurl - Flickr API</Summary>
+        <Description xml:lang="en">Flickcurl is a C library for the Flickr API, handling creating the requests, signing, token management, calling the API, marshalling request parameters and decoding responses. It uses libcurl to call the REST web service and libxml2 to manipulate the XML responses. Flickcurl supports all of the API (see Flickcurl API coverage for details) including the functions for photo/video uploading, browsing, searching, adding and editing comments, groups, notes, photosets, categories, activity, blogs, favorites, places, tags, machine tags, institutions, pandas and photo/video metadata. It also includes a program flickrdf to turn photo metadata, tags, machine tags and places into an RDF triples description.
+</Description>
+        <PartOf>multimedia.library</PartOf>
+        <Files>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2015-11-12</Date>
+            <Version>1.26</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Justin Zobel</Name>
+            <Email>justin@solus-project.com</Email>
+        </Update>
+    </History>
+</PISI>
